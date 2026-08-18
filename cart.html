@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Your Crate — ROTARY</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Inter:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <input type="checkbox" id="nav-toggle" class="nav__toggle-input">
+  <nav class="nav container">
+    <a href="index.html" class="nav__logo"><span class="logo-disc"></span>ROTARY</a>
+    <ul class="nav__links">
+      <li><a href="index.html" class="nav__link">Home</a></li>
+      <li><a href="index.html#shop" class="nav__link">Shop</a></li>
+      <li><a href="product.html" class="nav__link">Turntables</a></li>
+      <li><a href="index.html#story" class="nav__link">Journal</a></li>
+      <li><a href="index.html#footer" class="nav__link">Support</a></li>
+    </ul>
+    <div class="nav__actions">
+      <button class="icon-btn" aria-label="Search">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+      </button>
+      <a href="login.html" class="icon-btn" aria-label="Account">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c1.6-4 5-6 8-6s6.4 2 8 6"/></svg>
+      </a>
+      <a href="cart.html" class="icon-btn" aria-label="Cart">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 4h2l2.6 12.6a2 2 0 0 0 2 1.6h8a2 2 0 0 0 2-1.5L21 8H6"/><circle cx="10" cy="21" r="1.2"/><circle cx="18" cy="21" r="1.2"/></svg>
+        <span class="cart-badge">3</span>
+      </a>
+      <label for="nav-toggle" class="nav__toggle" aria-label="Menu"><span></span></label>
+    </div>
+  </nav>
+</header>
+
+<main class="container cart-page">
+
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <a href="index.html">Home</a><span class="sep">/</span>
+    <span class="current">Your Crate</span>
+  </nav>
+
+  <div class="page-title-row">
+    <h1 class="page-title">Your Crate</h1>
+    <span class="count mono" data-cart-count>3 items</span>
+  </div>
+
+  <div class="cart-layout">
+    <div>
+      <div class="track-list-head">
+        <span>Trk</span><span>Item</span><span>Product</span><span>Qty</span><span>Total</span><span></span>
+      </div>
+
+      <div class="cart-table">
+
+        <div class="track-row" data-price="1249">
+          <span class="track-no mono">A1</span>
+          <div class="track-thumb"><div class="vinyl"></div></div>
+          <div class="track-info">
+            <div class="track-title">Aurum Belt-Drive Turntable</div>
+            <div class="track-variant">Walnut plinth</div>
+          </div>
+          <div class="qty-stepper">
+            <button class="qty-stepper__btn" type="button" data-action="decrease" aria-label="Decrease quantity">−</button>
+            <span class="qty-stepper__value">1</span>
+            <button class="qty-stepper__btn" type="button" data-action="increase" aria-label="Increase quantity">+</button>
+          </div>
+          <span class="track-price mono">$1,249.00</span>
+          <button class="track-remove" aria-label="Remove item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+        </div>
+
+        <div class="track-row" data-price="340" style="animation-delay:.05s">
+          <span class="track-no mono">A2</span>
+          <div class="track-thumb"><div class="vinyl"></div></div>
+          <div class="track-info">
+            <div class="track-title">Sable MC Cartridge</div>
+            <div class="track-variant">Pre-aligned</div>
+          </div>
+          <div class="qty-stepper">
+            <button class="qty-stepper__btn" type="button" data-action="decrease" aria-label="Decrease quantity">−</button>
+            <span class="qty-stepper__value">1</span>
+            <button class="qty-stepper__btn" type="button" data-action="increase" aria-label="Increase quantity">+</button>
+          </div>
+          <span class="track-price mono">$340.00</span>
+          <button class="track-remove" aria-label="Remove item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+        </div>
+
+        <div class="track-row" data-price="38" style="animation-delay:.1s">
+          <span class="track-no mono">B1</span>
+          <div class="track-thumb"><div class="vinyl"></div></div>
+          <div class="track-info">
+            <div class="track-title">Anti-Static Brush Kit</div>
+            <div class="track-variant">Carbon fiber</div>
+          </div>
+          <div class="qty-stepper">
+            <button class="qty-stepper__btn" type="button" data-action="decrease" aria-label="Decrease quantity">−</button>
+            <span class="qty-stepper__value">1</span>
+            <button class="qty-stepper__btn" type="button" data-action="increase" aria-label="Increase quantity">+</button>
+          </div>
+          <span class="track-price mono">$38.00</span>
+          <button class="track-remove" aria-label="Remove item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+        </div>
+
+      </div>
+
+      <form class="promo-row">
+        <input class="input" type="text" placeholder="Promo code — try GROOVE10" aria-label="Promo code">
+        <button class="btn btn--ghost" type="submit">Apply</button>
+      </form>
+    </div>
+
+    <aside class="cart-summary">
+      <div class="cart-summary__title">Order Summary</div>
+      <div class="summary-row"><span>Subtotal</span><span data-summary="subtotal">$1,627.00</span></div>
+      <div class="summary-row"><span>Discount</span><span data-summary="discount">—</span></div>
+      <div class="summary-row"><span>Shipping</span><span data-summary="shipping">$18.00</span></div>
+      <div class="summary-row"><span>Estimated tax</span><span data-summary="tax">$134.23</span></div>
+      <div class="summary-row total"><span>Total</span><span data-summary="total">$1,779.23</span></div>
+
+      <a href="login.html" class="btn btn--primary btn--block btn--lg"><span>Checkout Securely</span><span class="ripple"></span></a>
+
+      <div class="summary-note">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6z"/><path d="M9 12l2 2 4-4"/></svg>
+        Encrypted checkout · 30-day returns
+      </div>
+      <div class="payment-icons">
+        <span>VISA</span><span>MC</span><span>AMEX</span><span>PayPal</span>
+      </div>
+    </aside>
+  </div>
+
+</main>
+
+<footer class="site-footer" id="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div class="footer__brand">
+        <a href="index.html" class="nav__logo"><span class="logo-disc"></span>ROTARY</a>
+        <p>Turntables, amplifiers and speakers built in Portland, Oregon since 1994. Serviced for life.</p>
+      </div>
+      <div class="footer__col">
+        <h4>Shop</h4>
+        <ul><li><a href="product.html">Turntables</a></li><li><a href="product.html">Amplifiers</a></li><li><a href="product.html">Speakers</a></li></ul>
+      </div>
+      <div class="footer__col">
+        <h4>Support</h4>
+        <ul><li><a href="#">Shipping &amp; Returns</a></li><li><a href="#">Warranty</a></li><li><a href="#">Contact</a></li></ul>
+      </div>
+      <div class="footer__col">
+        <h4>Company</h4>
+        <ul><li><a href="index.html#story">Our Story</a></li><li><a href="login.html">Account</a></li></ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>© 2026 ROTARY Audio Co. All rights reserved.</span>
+      <div class="groove-mini" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

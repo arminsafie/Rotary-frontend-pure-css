@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sign In — ROTARY</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Inter:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="auth-page">
+
+  <section class="auth-visual">
+    <div class="auth-visual__rings">
+      <div class="vinyl-stage">
+        <div class="vinyl"></div>
+        <div class="tonearm"></div>
+      </div>
+    </div>
+    <div class="auth-visual__top">
+      <a href="index.html" class="nav__logo"><span class="logo-disc"></span>ROTARY</a>
+    </div>
+    <div class="auth-visual__bottom">
+      <span class="eyebrow">Member Access</span>
+      <p>Track orders, save your turntable's service history, and get early access to limited pressings and workshop drops.</p>
+    </div>
+  </section>
+
+  <section class="auth-panel">
+    <div class="auth-card">
+
+      <input type="radio" name="auth-mode" id="mode-signin" checked class="sr-only">
+      <input type="radio" name="auth-mode" id="mode-signup" class="sr-only">
+
+      <div class="auth-toggle">
+        <div class="auth-toggle__indicator"></div>
+        <label for="mode-signin">Sign In</label>
+        <label for="mode-signup">Create Account</label>
+      </div>
+
+      <div class="auth-form-wrap">
+
+        <div class="auth-card__head auth-card__head--signin">
+          <h1>Welcome back</h1>
+          <p>Sign in to manage your orders and warranty.</p>
+        </div>
+        <div class="auth-card__head auth-card__head--signup">
+          <h1>Create your account</h1>
+          <p>Join for order tracking and early access to drops.</p>
+        </div>
+
+        <form class="auth-form form--signin">
+          <div class="field">
+            <input type="email" placeholder=" " required id="signin-email">
+            <label for="signin-email">Email address</label>
+          </div>
+          <div class="field field--password">
+            <input type="password" placeholder=" " required id="signin-password">
+            <label for="signin-password">Password</label>
+            <button type="button" class="password-toggle" aria-label="Show password">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7-11-7-11-7z"/><circle cx="12" cy="12" r="3"/></svg>
+            </button>
+          </div>
+          <div class="field-row">
+            <label class="checkbox-row"><input type="checkbox"> Remember me</label>
+            <a href="#" class="link-muted">Forgot password?</a>
+          </div>
+          <button type="submit" class="btn btn--primary btn--lg btn--block btn--submit">
+            <span class="spinner"></span>
+            <span class="btn-text">Sign In</span>
+          </button>
+        </form>
+
+        <form class="auth-form form--signup">
+          <div class="field">
+            <input type="text" placeholder=" " required id="signup-name">
+            <label for="signup-name">Full name</label>
+          </div>
+          <div class="field">
+            <input type="email" placeholder=" " required id="signup-email">
+            <label for="signup-email">Email address</label>
+          </div>
+          <div class="field field--password">
+            <input type="password" placeholder=" " required id="signup-password">
+            <label for="signup-password">Create a password</label>
+            <button type="button" class="password-toggle" aria-label="Show password">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7-11-7-11-7z"/><circle cx="12" cy="12" r="3"/></svg>
+            </button>
+          </div>
+          <div class="field-row">
+            <label class="checkbox-row"><input type="checkbox" required> I agree to the Terms &amp; Privacy Policy</label>
+          </div>
+          <button type="submit" class="btn btn--primary btn--lg btn--block btn--submit">
+            <span class="spinner"></span>
+            <span class="btn-text">Create Account</span>
+          </button>
+        </form>
+
+      </div>
+
+      <div class="auth-divider">or continue with</div>
+
+      <div class="social-row">
+        <button type="button" class="social-btn">
+          <svg viewBox="0 0 24 24"><path fill="#EA4335" d="M12 10.2v3.9h5.5c-.24 1.3-1.7 3.8-5.5 3.8-3.3 0-6-2.7-6-6.1s2.7-6.1 6-6.1c1.9 0 3.1.8 3.9 1.5l2.6-2.5C16.9 3.2 14.7 2.2 12 2.2 6.9 2.2 2.7 6.4 2.7 11.5s4.2 9.3 9.3 9.3c5.4 0 9-3.8 9-9.1 0-.6-.06-1.1-.16-1.5z"/></svg>
+          Google
+        </button>
+        <button type="button" class="social-btn">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16.5 1.5c.1 1.1-.3 2.2-1 3-.7.8-1.9 1.4-3 1.3-.1-1.1.4-2.2 1-3 .8-.8 2-1.4 3-1.3zM20 17.2c-.5 1.2-.8 1.7-1.5 2.7-1 1.4-2.4 3.2-4.1 3.2-1.5 0-1.9-1-4-1-2 0-2.5 1-4 1-1.7 0-3-1.6-4-3-2.7-3.9-3-8.5-1.3-11 1.2-1.7 3-2.7 4.7-2.7 1.7 0 2.8 1 4.2 1 1.4 0 2.2-1 4.2-1 1.5 0 3.1.8 4.2 2.2-3.7 2-3.1 7.3 1.6 8.6z"/></svg>
+          Apple
+        </button>
+      </div>
+
+      <p class="auth-footer-note">By continuing you agree to ROTARY's Terms of Service and Privacy Policy.</p>
+    </div>
+  </section>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
